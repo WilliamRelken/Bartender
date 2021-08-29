@@ -11,7 +11,6 @@ const OrderController = require('./Controllers/OrderController');
 const MenuController = require('./Controllers/MenuController'); 
 
 app.use(express.json());
-app.use(express.urlencoded());
 
 mongoose.connect(keys.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(port, () => {console.info("Server started");}))

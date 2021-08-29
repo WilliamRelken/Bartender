@@ -4,7 +4,7 @@
   "description": "bartender",
   "main": "app.js",
   "author": {
-    "name": ""
+    "name": "William Relken"
   },
   "dependencies": {
     "express": "^4.17.1",

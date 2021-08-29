@@ -1,4 +1,5 @@
 const express = require('express');
+const MenuModel = require('../Models/MenuModel');
 
 const router = express.Router();
 
@@ -7,23 +8,23 @@ router.get('/', (req, res) => {
 });
 
 //if time permits I may functionalize the add/remove menu items
-/*
+
 router.post('/add', (req, res) => {
 
-    OrderModel.Order_add(JSON.stringify(req.body));
+    MenuModel.Menu_add(JSON.stringify(req.body));
 
     res.send("<h1>Menu Item Made</h1>");
 });
 
 router.post('/del', (req, res) => {
 
-    OrderModel.Order_del(JSON.stringify(req.body));
+    MenuModel.Menu_del(JSON.stringify(req.body));
 
     res.send("<h1>Menu Item Removed</h1>");
 });
-*/
+
 
 //list all menu items
-router.get('/list', OrderModel.Order_list);
+router.get('/list', MenuModel.Menu_list);
 
 module.exports = router;

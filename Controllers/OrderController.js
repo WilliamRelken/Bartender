@@ -3,9 +3,6 @@ const OrderModel = require('../Models/OrderModel');
 
 const router = express.Router();
 
-router.use(express.json());
-router.use(express.urlencoded());
-
 router.get('/', (req, res) => {
     res.send('<p>This is the order page</p>');
 });

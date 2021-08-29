@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-//const Schema = mongoose.Schema; same thing as line 3 lesson 40 udemy
-const { Schema } = mongoose;
+
+const Schema = mongoose.Schema;
 
 const orderSchema = new Schema({
     order_num: Number,
