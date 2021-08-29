@@ -3,7 +3,7 @@ const MenuDB = require('../DBModels/MenuDB');
 const Menu_add = (data) => {
     data = JSON.parse(data);
 
-    MenuDB.create(data);
+    MenuDB.create(data).catch((err) => console.log(err));
 
 }
 

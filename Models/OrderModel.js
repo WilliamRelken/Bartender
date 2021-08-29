@@ -9,7 +9,7 @@ const Order_add = (data) => {
 
     console.log("Adding order: " + data.order_name + " for " + data.menu_selection);
 
-    OrderDB.create(data);
+    OrderDB.create(data).catch((err) => console.log(err));
 }
 
 //no json parameter is necessary here
