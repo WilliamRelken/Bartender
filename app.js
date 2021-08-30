@@ -9,6 +9,9 @@ const express = require('express'),
 const IndexController = require('./Controllers/MainController');
 const OrderController = require('./Controllers/OrderController');
 const MenuController = require('./Controllers/MenuController'); 
+const TodoController = require('./Controllers/TodoController'); 
+
+app.use(express.static('public'));
 
 app.use(express.json());
 
@@ -26,6 +29,6 @@ app.use('/Order', OrderController);
 //hold all menu routes
 app.use('/Menu', MenuController);
 
-
+app.use('/Todo', TodoController);
 
 //app.use("/", router); 

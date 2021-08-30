@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bartender App</title>
+</head>
+<body>
+  <p>Hello, what can I get for you?</p>
+  <form id="frm1" action="/Order/add" method="post">
+    <input name="menu_selection" placeholder="item name: e.g. beer">
+    <input name="order_name" placeholder="person name: e.g. John">
+    <button type="submit">Submit</button>
+  </form>
+  <form id="frm2" action="/Todo" method="post">
+    <input name="title" placeholder="todo title">
+    <button type="submit">Submit</button>
+  </form>
+  <script src="client.js"></script>
+</body>
+</html>
