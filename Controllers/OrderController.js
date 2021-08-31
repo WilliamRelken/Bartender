@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
 //delete
 router.delete("/:id", async (req, res) => {
     const { id } = req.params;
-    const result = await OrderDB.deleteOne({ _id: id });
+    const result = await OrderDB.findByIdAndRemove(id);
     res.send(result);
     });
 
