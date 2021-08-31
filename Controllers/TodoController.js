@@ -1,5 +1,5 @@
 const express = require('express');
-const TodoDB = require('../DBModels/TodoDB');
+const TodoDB = require('../modelsdb/TodoDB');
 
 const router = express.Router();
 
