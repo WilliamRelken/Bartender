@@ -14,6 +14,7 @@ async function menuList(){
         radio.setAttribute("id", drink.drink_name);
         radio.setAttribute("name", "menu_selection");
         radio.setAttribute("value", drink.drink_name);
+        radio.setAttribute("required", "true");
 
         //create label for radio button
         label = document.createElement("label");
